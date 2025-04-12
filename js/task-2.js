@@ -1,10 +1,11 @@
 function formatMessage(message, maxLength) {
-	let line = message.length;
-	if (line <= maxLength) {
+	const line = message.length;
+	if(line <= maxLength) {
 		return message;
 	} else {
-		let overkill = message.slice(0, maxLength);
-		return overkill + "..."
+		// const overkill = message.slice(0, maxLength);
+		// return overkill + "..."
+		return message.slice(0, maxLength) + "..."
 	}
 }
 
