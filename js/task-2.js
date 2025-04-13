@@ -3,8 +3,6 @@ function formatMessage(message, maxLength) {
 	if(line <= maxLength) {
 		return message;
 	} else {
-		// const overkill = message.slice(0, maxLength);
-		// return overkill + "..."
 		return message.slice(0, maxLength) + "..."
 	}
 }
